@@ -16,11 +16,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function repeater(str, {
+
   repeatTimes = 1,
   separator = "+",
   addition = "",
   additionRepeatTimes = 1,
   additionSeparator = "|",
+  
 }) {
   let newString = Array(additionRepeatTimes).fill(`${addition}`).join(additionSeparator);
 
